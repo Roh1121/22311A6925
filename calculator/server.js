@@ -6,7 +6,7 @@ const app = express();
 const PORT = 9876;
 
 const WINDOW_SIZE = 10;
-const window = new Set(); // stores unique values
+const window = new Set(); 
 
 const numberTypeToURL = {
     p: 'http://20.244.56.144/evaluation-service/primes',
@@ -15,7 +15,7 @@ const numberTypeToURL = {
     r: 'http://20.244.56.144/evaluation-service/rand'
 };
 
-// Load token from .env or hardcode for now if needed
+
 const API_TOKEN = process.env.API_TOKEN || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ4MzIyODQ1LCJpYXQiOjE3NDgzMjI1NDUsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjE5N2NhNjUxLWU0NDEtNGY1YS1hMjcxLWM3MzAzYWMwYTI5OCIsInN1YiI6IjIyMzExYTY5MjVAaW90LnNyZWVuaWRoaS5lZHUuaW4ifSwiZW1haWwiOiIyMjMxMWE2OTI1QGlvdC5zcmVlbmlkaGkuZWR1LmluIiwibmFtZSI6InJvaGluaSBhdnVsYSIsInJvbGxObyI6IjIyMzExYTY5MjUiLCJhY2Nlc3NDb2RlIjoiUENxQVVLIiwiY2xpZW50SUQiOiIxOTdjYTY1MS1lNDQxLTRmNWEtYTI3MS1jNzMwM2FjMGEyOTgiLCJjbGllbnRTZWNyZXQiOiJtcUZVdnhzeXdQUGdLdUdNIn0.RF6XgsrxwZMYJB27z3ws892eBm-ECoZaV02Oqmpu9_E"; // Replace with full token
 
 function fetchNumbers(type) {
@@ -42,7 +42,7 @@ app.get('/numbers/:numberid', async (req, res) => {
         newNumbers = response.data.numbers || [];
     } catch (err) {
         console.error("Fetch error:", err.response?.status, err.response?.data);
-        newNumbers = []; // treat errors as empty response
+        newNumbers = []; 
     }
 
     const tempWindow = Array.from(window);
@@ -57,7 +57,7 @@ app.get('/numbers/:numberid', async (req, res) => {
         tempWindow.shift();
     }
 
-    // Update window
+    
     window.clear();
     tempWindow.forEach(n => window.add(n));
 
@@ -82,5 +82,5 @@ app.get('/numbers/:numberid', async (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log(`✅ Microservice running at http://localhost:${PORT}`);
+    console.log(`Microservice running at http://localhost:${PORT}`);
 });
