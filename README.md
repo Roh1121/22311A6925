@@ -1,7 +1,7 @@
 
-# 📁 22311a6917
+# 📁 22311A6925
 
-This repository contains **two separate Node.js projects** located inside the folder `22311a6917`. Each sub-project can be run independently. The two sub-projects are:
+This repository contains **two separate Node.js projects** located inside the folder `22311A6925`. Each sub-project can be run independently. The two sub-projects are:
 
 - `calculator` – A basic Node.js Project - Average Calculator HTTP
 Microservice server.
@@ -12,7 +12,7 @@ Microservice server.
 ## 📂 Folder Structure
 
 ```
-223aa16917/
+22311A6925/
 ├── calculator/
 │   ├── server.js
 │   └── package.json
@@ -31,8 +31,8 @@ Follow these steps to clone the repository and run both Node.js projects:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/karthiksriramoju/22311a6917.git
-cd 22311a6917
+git clone https://github.com/karthiksriramoju/22311A6925.git
+cd 22311a6925
 ```
 
 ---
@@ -42,7 +42,7 @@ cd 22311a6917
 ### 📁 Location
 
 ```
-223aa16917/calculator/
+22311A6925/calculator/
 ```
 
 ### 📦 Install Dependencies
@@ -70,7 +70,7 @@ Test :
 ### 📁 Location
 
 ```
-223aa16917/stock_price_aggregator/
+22311A6925/stock_price_aggregator/
 ```
 
 ### 📦 Install Dependencies
@@ -115,10 +115,4 @@ You can test the endpoints using:
 
 ---
 
-## 👨‍💻 Author
 
-**Your Name**  
-[GitHub](https://github.com/karthiksriramoju)  
-[LinkedIn](https://www.linkedin.com/in/karthik-sriramoju-4bb1b3296/)
-
---
